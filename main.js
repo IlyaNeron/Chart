@@ -13,6 +13,8 @@ const OY_elem = $('.OY'),
 let arr = [5,8,2,1,15,2,3,5,9,11,10,4,3,14,1,7,10,3,2,13];
 let max = Math.max.apply(null, arr);
 let single_segment = 40;
+let OY_margin_bottom = 29;
+let OX_margin_left = 37;
 
 function chart() {
     for (let i = 0; i < arr.length; i++) {
@@ -21,8 +23,8 @@ function chart() {
         let columns_li = document.createElement('li');
         let arr_elem = arr[i];
 
-        chart_block_elem.style.width = (arr.length * single_segment) + 37 + 'px';
-        chart_block_elem.style.height = (max * single_segment) + 29 + 'px';
+        chart_block_elem.style.width = (arr.length * single_segment) + OX_margin_left + 'px';
+        chart_block_elem.style.height = (max * single_segment) + OY_margin_bottom + 'px';
 
         if (i + 1 <= max) {
             OY_li.innerText = (i + 1);
