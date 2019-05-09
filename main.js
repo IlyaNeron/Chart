@@ -12,7 +12,7 @@ const OY_elem = $('.OY'),
 
 let arr = [5,8,2,1,15,2,3,5,9,11,10,4,3,14,1,7,10,3,2,13];
 let max = Math.max.apply(null, arr);
-let single_segment = 40;
+let single_segment = 30;
 let OY_margin_bottom = 29;
 let OX_margin_left = 37;
 
